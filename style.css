@@ -58,7 +58,6 @@ body {
     font-size: 15px;
     text-decoration: none;
     border: 2px solid #fff;
-    border-radius: 45x;
 }
 
 .gap1 {
@@ -68,6 +67,14 @@ body {
 
 .gap2 {
     gap: 20px;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+    .nav {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 .section-box {
@@ -85,9 +92,21 @@ body {
     box-sizing: border-box;
 }
 
+.description h1 {
+    color: antiquewhite;
+}
+
 .description p {
     font-size: 1.2rem;
+    color: #fff;
 }
+
+.sign-up {
+    background-color: antiquewhite;
+    width: 150px;
+    height: 50px;
+}
+
 
 .image {
     margin-top: 150px;
@@ -95,20 +114,6 @@ body {
 
 .image img {
     height: 400px;
-}
-
-.description h1 {
-    color: white;
-
-}
-
-.description p {
-    color: white;
-}
-
-.sign-up {
-    width: 150px;
-    height: 50px;
 }
 
 .under-h1 {
