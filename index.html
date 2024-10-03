@@ -88,6 +88,55 @@
     <div class="arrow display-6">
         <a href=""><img src="icons/arrow down.png" alt=""></i></a>
     </div>
+    <section class="main-content" id="tracker">
+      <div class="head-text">
+        <h1>Access Your Personal Finance Tracker</h1>
+        <div class="under-head-text"></div>
+      </div>
+      <br />
+
+      <div class="tracker-part">
+        <div class="tracker-balance">
+          Current Balance: <span id="balance" class="current-balance"></span>
+        </div>
+
+        <div class="currency-filter">
+          <div class="filter-left">
+            <label for="currency">Select Currency:</label>
+            <select id="currency" onchange="updateBalance()">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="INR" selected>INR</option>
+            </select>
+          </div>
+          <div class="filter-right">
+            <label for="text" class="date-box">Choose Date:</label>
+            <input type="date" id="date" placeholder="Date" />
+          </div>
+        </div>
+
+        <div class="transaction-form">
+          <input type="text" id="description" placeholder="Description" />
+          <input type="number" id="amount" placeholder="Amount" />
+          <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+          <button onclick="addTransaction()">Add Transaction</button>
+        </div>
+        <div class="table-part" id="table-part">
+          <table id="transaction-table">
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Amount</th>
+              <th>Type</th>
+              <th>Action</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
 
 
 </body>
