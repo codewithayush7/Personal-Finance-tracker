@@ -1,19 +1,21 @@
 body {
-    background-color: #222;
+    background: linear-gradient(135deg, #A8E6CE, #DCEDC1, #FFD3B5);
 }
 
 .navbar {
     padding: 0;
     overflow: hidden;
     padding-bottom: 8em;
-    color: #222;
-    background-color: #222;
-    background: #222;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
 }
 
 .container-fluid {
     padding: 0;
-    background-color: #222;
+    background: #0F2027;
+    background: linear-gradient(135deg, #B9FBC0, #A0E7E5, #F6E58D);
+
     height: 60px;
     display: flex;
     text-align: center
