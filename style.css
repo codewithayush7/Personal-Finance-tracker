@@ -130,9 +130,10 @@ body {
     height: 80px;
 }
 
+/* General styles */
 .main-content {
     margin: 0 16%;
-    height: 500px;
+    padding: 20px;
 }
 
 .head-text {
@@ -152,7 +153,6 @@ body {
 .tracker-part {
     border: 2px solid antiquewhite;
     border-radius: 6px;
-    height: 44.8%;
 }
 
 .tracker-balance {
@@ -161,13 +161,11 @@ body {
     font-size: 1.7rem;
     font-weight: 500;
     color: #0F2027;
-    height: 3rem;
-    margin-bottom: 4%;
+    margin-bottom: 20px;
 }
 
 .currency-filter {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     margin-bottom: 20px;
     color: antiquewhite;
@@ -175,31 +173,89 @@ body {
 
 .transaction-form {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 0 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.transaction-form #description {
-    margin: 0 10px;
-    width: 25%;
-}
-
-.transaction-form #amount {
-    margin: 0 10px 0 0;
+.transaction-form input,
+.transaction-form select {
+    margin-right: 10px;
+    flex: 1;
 }
 
 .transaction-form button {
     background-color: #18ad1d;
     border-radius: 10px;
     border: 0px;
-    margin-left: 10px;
+    padding: 5px 10px;
 }
 
+/* Table styles */
 #table-part {
-    height: 35px;
     background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    border-radius: 6px;
+}
+
+#transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#transaction-table th,
+#transaction-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-content {
+        margin: 0 5%;
+    }
+
+    .currency-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .currency-filter div {
+        margin-bottom: 10px;
+    }
+
+    .transaction-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .transaction-form input,
+    .transaction-form select,
+    .transaction-form button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .tracker-balance {
+        font-size: 1.2rem;
+    }
+
+    .currency-filter,
+    .transaction-form {
+        flex-direction: column;
+    }
+
+    .currency-filter div,
+    .transaction-form div {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #transaction-table th,
+    #transaction-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
 }
