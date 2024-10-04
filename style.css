@@ -197,7 +197,7 @@ body {
 }
 
 #table-part {
-    height: 16%;
+    height: 35px;
     background-color: #fff;
     display: flex;
     align-items: center;
