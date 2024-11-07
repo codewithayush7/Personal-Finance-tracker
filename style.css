@@ -259,3 +259,14 @@ body {
         font-size: 14px;
     }
 }
+
+.madeby {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.tracker {
+    display: grid;
+    gap: 500px;
+}
